@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "PS Download Retry",
+  "version": "1.0.0",
+  "description": "Clicks the Try Again button on the PlayStation Game Library downloads page whenever it appears.",
+  "content_scripts": [
+    {
+      "matches": ["https://library.playstation.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
